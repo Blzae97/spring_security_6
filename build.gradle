@@ -1,29 +1,51 @@
 plugins {
 	id 'java'
+	id 'java-library'
 	id 'org.springframework.boot' version '3.1.11'
 	id 'io.spring.dependency-management' version '1.1.4'
-}
-
-group = 'com.spring.security'
-version = '0.0.1-SNAPSHOT'
-
-java {
-	sourceCompatibility = '17'
 }
 
 repositories {
 	mavenCentral()
 }
 
-dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+bootJar {
+	enabled = false
 }
 
-tasks.named('bootBuildImage') {
-	builder = 'paketobuildpacks/builder-jammy-base:latest'
-}
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'java-library'
+	apply plugin: 'org.springframework.boot'
+	apply plugin: 'io.spring.dependency-management'
 
-tasks.named('test') {
-	useJUnitPlatform()
+	group = 'com.spring.security'
+	version = '0.0.1-SNAPSHOT'
+
+	java {
+		sourceCompatibility = '17'
+	}
+
+	dependencies {
+		implementation 'org.springframework.boot:spring-boot-starter-web'
+		implementation 'org.springfreamwork.boot:spring-boot-starter-security'
+
+		implementation 'org.google.code.gson:gson'
+		implementation 'org.apache.commons:commons-lang3'
+
+		implementation 'org.projectlombok:lombok'
+		annotationProcessor 'org.projectlombok:lombok'
+
+		testImplementation 'org.springframework.boot:spring-boot-starter-test'
+		testImplementation 'org.springframework.security:spring-security-test'
+	}
+
+	tasks.named('test') {
+		useJUnitPlatform()
+	}
+
+	tasks.named('bootBuildImage') {
+		builder = 'paketobuildpacks/builder-jammy-base:latest'
+	}
+
 }
