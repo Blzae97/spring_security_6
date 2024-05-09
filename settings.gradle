@@ -1,1 +1,13 @@
 rootProject.name = 'study'
+
+includeProject(":spring-security-form-login", "spring-security-form-login")
+
+
+def includeProject(String name, String path){
+    include(name)
+    if(path != null){
+        project(name).projectDir = new File(path)
+    }
+}
+
+
