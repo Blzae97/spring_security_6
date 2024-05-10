@@ -2,7 +2,7 @@ rootProject.name = 'study'
 
 includeProject(":spring-security-form-login", "spring-security-form-login")
 includeProject(":spring-security-basic-login", "spring-security-basic-login")
-
+includeProject(":spring-security-remember-me-login", "spring-security-remember-me-login")
 
 def includeProject(String name, String path){
     include(name)
