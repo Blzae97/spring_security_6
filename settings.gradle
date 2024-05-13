@@ -4,6 +4,7 @@ includeProject(":spring-security-form-login", "spring-security-form-login")
 includeProject(":spring-security-basic-login", "spring-security-basic-login")
 includeProject(":spring-security-remember-me-login", "spring-security-remember-me-login")
 includeProject(":spring-security-anonymous-login", "spring-security-anonymous-login")
+includeProject(":spring-security-logout", "spring-security-logout")
 
 def includeProject(String name, String path){
     include(name)
