@@ -5,6 +5,8 @@ includeProject(":spring-security-basic-login", "spring-security-basic-login")
 includeProject(":spring-security-remember-me-login", "spring-security-remember-me-login")
 includeProject(":spring-security-anonymous-login", "spring-security-anonymous-login")
 includeProject(":spring-security-logout", "spring-security-logout")
+includeProject(":spring-security-request-cache", "spring-security-request-cache")
+includeProject(":spring-security-maximum-session", "spring-security-maximum-session")
 
 def includeProject(String name, String path){
     include(name)
@@ -12,5 +14,4 @@ def includeProject(String name, String path){
         project(name).projectDir = new File(path)
     }
 }
-include 'spring-security-request-cache'
 
