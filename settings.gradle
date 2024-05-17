@@ -9,6 +9,8 @@ includeProject(":spring-security-request-cache", "spring-security-request-cache"
 includeProject(":spring-security-maximum-session", "spring-security-maximum-session")
 includeProject(":spring-security-session-fixation", "spring-security-session-fixation")
 includeProject(":spring-security-exception-handling", "spring-security-exception-handling")
+includeProject(":spring-security-cors-test", "spring-security-cors-test")
+includeProject(":spring-security-cors", "spring-security-cors")
 
 def includeProject(String name, String path){
     include(name)
