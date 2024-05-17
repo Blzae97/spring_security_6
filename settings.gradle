@@ -14,6 +14,7 @@ includeProject(":spring-security-cors", "spring-security-cors")
 includeProject(":spring-security-csrf", "spring-security-csrf")
 includeProject(":spring-security-csrf-form", "spring-security-csrf-form")
 includeProject(":spring-security-csrf-cookie", "spring-security-csrf-cookie")
+includeProject(":spring-security-samesite", "spring-security-samesite")
 
 def includeProject(String name, String path){
     include(name)
