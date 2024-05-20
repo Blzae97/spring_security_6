@@ -19,6 +19,7 @@ includeProject(":spring-security-authrizationRequest", "spring-security-authriza
 includeProject(":spring-security-web-expression", "spring-security-web-expression")
 includeProject(":spring-security-custom-web-expression", "spring-security-custom-web-expression")
 includeProject(":spring-security-custom-requestmatcher", "spring-security-custom-requestmatcher")
+includeProject(":spring-security-pre-aurothize", "spring-security-pre-aurothize")
 
 def includeProject(String name, String path){
     include(name)
@@ -26,4 +27,3 @@ def includeProject(String name, String path){
         project(name).projectDir = new File(path)
     }
 }
-
