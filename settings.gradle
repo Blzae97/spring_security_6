@@ -17,6 +17,7 @@ includeProject(":spring-security-csrf-cookie", "spring-security-csrf-cookie")
 includeProject(":spring-security-samesite", "spring-security-samesite")
 includeProject(":spring-security-authrizationRequest", "spring-security-authrizationRequest")
 includeProject(":spring-security-web-expression", "spring-security-web-expression")
+includeProject(":spring-security-custom-web-expression", "spring-security-custom-web-expression")
 
 def includeProject(String name, String path){
     include(name)
