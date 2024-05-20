@@ -21,6 +21,7 @@ includeProject(":spring-security-custom-web-expression", "spring-security-custom
 includeProject(":spring-security-custom-requestmatcher", "spring-security-custom-requestmatcher")
 includeProject(":spring-security-pre-aurothize", "spring-security-pre-aurothize")
 includeProject(":spring-security-post-authorize", "spring-security-post-authorize")
+includeProject(":spring-security-pre-filter", "spring-security-pre-filter")
 
 def includeProject(String name, String path){
     include(name)
