@@ -23,6 +23,7 @@ includeProject(":spring-security-pre-aurothize", "spring-security-pre-aurothize"
 includeProject(":spring-security-post-authorize", "spring-security-post-authorize")
 includeProject(":spring-security-pre-filter", "spring-security-pre-filter")
 includeProject(":spring-security-post-filter", "spring-security-post-filter")
+includeProject(":spring-security-secured", "spring-security-secured")
 
 def includeProject(String name, String path){
     include(name)
