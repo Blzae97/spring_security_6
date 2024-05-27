@@ -28,6 +28,7 @@ includeProject(":spring-security-jsr250", "spring-security-jsr250")
 includeProject(":spring-security-meta-annotation", "spring-security-meta-annotation")
 includeProject(":spring-security-custom-bean-authorization", "spring-security-custom-bean-authorization")
 includeProject(":spring-security-static-resource-management", "spring-security-static-resource-management")
+includeProject(":spring-security-role-hierarchy", "spring-security-role-hierarchy")
 
 def includeProject(String name, String path){
     include(name)
