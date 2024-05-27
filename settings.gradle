@@ -25,6 +25,7 @@ includeProject(":spring-security-pre-filter", "spring-security-pre-filter")
 includeProject(":spring-security-post-filter", "spring-security-post-filter")
 includeProject(":spring-security-secured", "spring-security-secured")
 includeProject(":spring-security-jsr250", "spring-security-jsr250")
+includeProject(":spring-security-meta-annotation", "spring-security-meta-annotation")
 
 def includeProject(String name, String path){
     include(name)
