@@ -30,6 +30,7 @@ includeProject(":spring-security-custom-bean-authorization", "spring-security-cu
 includeProject(":spring-security-static-resource-management", "spring-security-static-resource-management")
 includeProject(":spring-security-role-hierarchy", "spring-security-role-hierarchy")
 includeProject(":spring-security-custom-authoirzation-manager", "spring-security-custom-authoirzation-manager")
+includeProject(":spring-security-request-matcher-delegating-authorization-manager", "spring-security-request-matcher-delegating-authorization-manager")
 
 def includeProject(String name, String path){
     include(name)
