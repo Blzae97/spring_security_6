@@ -1,0 +1,36 @@
+package com.spring.security.method.presentation.controller;
+
+import com.spring.security.method.application.service.IndexService;
+import com.spring.security.method.domain.account.dto.AccountItem;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class IndexController {
+    private final IndexService indexService;
+
+    public IndexController(IndexService indexService) {
+        this.indexService = indexService;
+    }
+
+    @GetMapping(value = "/")
+    public String index() {
+        return "index";
+    }
+
+    @GetMapping(value = "/user")
+    public String user() {
+        return indexService.getUser();
+    }
+
+    @GetMapping(value = "/db")
+    public String db() {
+        return indexService.getDB();
+    }
+
+    @GetMapping(value = "/admin")
+    public AccountItem admin(String name) {
+        return indexService.getAdmin(name);
+    }
+
+}

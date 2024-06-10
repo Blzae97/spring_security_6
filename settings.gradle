@@ -32,6 +32,7 @@ includeProject(":spring-security-role-hierarchy", "spring-security-role-hierarch
 includeProject(":spring-security-custom-authoirzation-manager", "spring-security-custom-authoirzation-manager")
 includeProject(":spring-security-request-matcher-delegating-authorization-manager", "spring-security-request-matcher-delegating-authorization-manager")
 includeProject(":spring-security-custom-method-authorization-manager", "spring-security-custom-method-authorization-manager")
+includeProject(":spring-security-method-pointcut", "spring-security-method-pointcut")
 
 def includeProject(String name, String path){
     include(name)
@@ -39,3 +40,4 @@ def includeProject(String name, String path){
         project(name).projectDir = new File(path)
     }
 }
+
