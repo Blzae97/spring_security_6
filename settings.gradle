@@ -42,4 +42,5 @@ def includeProject(String name, String path){
         project(name).projectDir = new File(path)
     }
 }
+include 'spring-security-custom-authentication-event'
 
