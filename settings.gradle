@@ -34,6 +34,7 @@ includeProject(":spring-security-request-matcher-delegating-authorization-manage
 includeProject(":spring-security-custom-method-authorization-manager", "spring-security-custom-method-authorization-manager")
 includeProject(":spring-security-method-pointcut", "spring-security-method-pointcut")
 includeProject(":spring-security-aop-method-security", "spring-security-aop-method-security")
+includeProject(":spring-security-authentication-event", "spring-security-authentication-event")
 
 def includeProject(String name, String path){
     include(name)
