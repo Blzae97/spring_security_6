@@ -35,6 +35,7 @@ includeProject(":spring-security-custom-method-authorization-manager", "spring-s
 includeProject(":spring-security-method-pointcut", "spring-security-method-pointcut")
 includeProject(":spring-security-aop-method-security", "spring-security-aop-method-security")
 includeProject(":spring-security-authentication-event", "spring-security-authentication-event")
+includeProject(":spring-security-custom-authentication-event", "spring-security-custom-authentication-event")
 
 def includeProject(String name, String path){
     include(name)
@@ -42,5 +43,4 @@ def includeProject(String name, String path){
         project(name).projectDir = new File(path)
     }
 }
-include 'spring-security-custom-authentication-event'
 
