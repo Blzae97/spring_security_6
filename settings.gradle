@@ -40,6 +40,7 @@ includeProject(":spring-security-custom-authentication-event-2", "spring-securit
 includeProject(":spring-security-authentication-event-publisher", "spring-security-authentication-event-publisher")
 includeProject(":spring-security-authorization-event", "spring-security-authorization-event")
 includeProject(":spring-security-servlet", "spring-security-servlet")
+includeProject(":spring-security-mvc", "spring-security-mvc")
 
 def includeProject(String name, String path){
     include(name)
