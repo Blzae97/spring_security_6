@@ -36,6 +36,7 @@ includeProject(":spring-security-method-pointcut", "spring-security-method-point
 includeProject(":spring-security-aop-method-security", "spring-security-aop-method-security")
 includeProject(":spring-security-authentication-event", "spring-security-authentication-event")
 includeProject(":spring-security-custom-authentication-event", "spring-security-custom-authentication-event")
+includeProject(":spring-security-custom-authentication-event-2", "spring-security-custom-authentication-event-2")
 
 def includeProject(String name, String path){
     include(name)
