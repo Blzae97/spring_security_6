@@ -44,6 +44,7 @@ includeProject(":spring-security-mvc", "spring-security-mvc")
 includeProject(":spring-security-async-authentication", "spring-security-async-authentication")
 includeProject(":spring-security-multi-security-filter-chain", "spring-security-multi-security-filter-chain")
 includeProject(":spring-security-custom-dsl", "spring-security-custom-dsl")
+includeProject(":spring-security-redis-session", "spring-security-redis-session")
 
 def includeProject(String name, String path){
     include(name)
@@ -51,3 +52,4 @@ def includeProject(String name, String path){
         project(name).projectDir = new File(path)
     }
 }
+
